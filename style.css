@@ -11,6 +11,61 @@
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+nav h4 {
+  font-size: 30px;
+  line-height: 60px;
+}
+nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+nav li {
+  display: inline;
+  margin-left: 23px;
+  line-height: 60px;
+}
+nav li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--sec-color);
+}
+nav li a:hover,
+nav li a.active {
+  color: var(--btn-color);
+}
+footer .foot-first {
+  background-color: var(--main-color);
+}
+footer h5 {
+  font-size: 40px;
+}
+footer .email-link {
+  display: flex;
+  justify-content: center;
+  font-size: 34px;
+  color: var(--sec-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+footer .email-link:hover {
+  color: var(--btn-color);
+}
+footer .icons {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+footer .icon {
+  margin-right: 20px;
+  background-color: var(--main-color);
+  padding: 15px;
+  border-radius: 50%;
+  color: black;
+}
+footer .icon:hover {
+  color: white;
+  background-color: black;
+}
 .hero {
   background-color: var(--main-color);
   text-align: center;
@@ -60,6 +115,33 @@ p {
   background-color: var(--hover-btn-color);
   color: var(--sec-color);
 }
+/* About Page */
+.about-hero {
+  padding: 110px;
+}
+.about-heading {
+  font-size: 35px;
+}
+.about-head-sec {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.work-hero {
+  padding: 110px;
+}
+@media (min-width: 1500px) {
+  .aport {
+    width: 380px;
+    height: 380px;
+  }
+  .aport-img {
+    padding: 80px;
+    width: 360px;
+    height: 360px;
+    background-color: #fafafa;
+  }
+}
+
 @media (max-width: 900px) {
   .hero {
     padding: 80px;
@@ -73,5 +155,36 @@ p {
   }
   h2 {
     font-weight: 600;
+  }
+  .about-heading {
+    line-height: 1;
+    font-size: 20px;
+  }
+  .about-hero h2 {
+    font-size: 18px !important;
+    font-weight: 600;
+  }
+  .about-hero p {
+    font-size: 15px;
+  }
+  .about-hero,
+  .work-hero {
+    padding: 25px !important;
+  }
+  nav li a {
+    font-size: 16px;
+  }
+  nav li {
+    margin-left: 10px;
+  }
+  nav h4 {
+    font-size: 20px;
+  }
+  nav {
+    max-width: 300px;
+  }
+  footer .email-link {
+    font-size: 17px;
+    margin: 10px;
   }
 }
