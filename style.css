@@ -64,7 +64,7 @@ footer .icon {
 }
 footer .icon:hover {
   color: white;
-  background-color: black;
+  background-color: var(--hover-btn-color);
 }
 .hero {
   background-color: var(--main-color);
@@ -126,9 +126,11 @@ p {
   margin-top: 10px;
   font-size: 25px;
 }
+/* work page */
 .work-hero {
   padding: 110px;
 }
+
 @media (min-width: 1500px) {
   .aport {
     width: 380px;
